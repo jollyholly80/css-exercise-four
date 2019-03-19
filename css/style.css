@@ -1,4 +1,61 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
+  font family: system-ui, sans-serif;
+  background-color: white;
+  }
+
+.container {
   background-color: #dadada;
-  font-size: 10px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.preview {
+  margin: 0% 0;
+  padding: 10px 10px;
+  height: 300px;
+  display: inline-block;
+  background-color: #dadada;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+}
+
+/* code added to create two-column design */
+@media screen and (min-width: 575px){
+  .preview {
+    margin: 1%;
+    width: 40%;
+  }
+}
+
+/* code added to create four-column design */
+@media screen and (min-width: 1199px){
+  .preview {
+     margin: 1%;
+     width: 22%;
+  }
+}
+
+.baku {
+  background-image: url("C:/Users/Holly/css-exercise-four/images/baku.jpg");
+}
+
+.london {
+  background-image: url("C:/Users/Holly/css-exercise-four/images/london.png");
+}
+
+.madrid {
+  background-image: url("C:/Users/Holly/css-exercise-four/images/madrid.jpg");
+}
+
+.rome {
+  background-image: url("C:/Users/Holly/css-exercise-four/images/rome.jpg");
+}
+
+h1 {
+  font-size: 1.5em;
 }
