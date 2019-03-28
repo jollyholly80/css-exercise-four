@@ -24,6 +24,13 @@ body {
   background-clip: content-box;
 }
 /* code added to create single-column design */
+@media screen and (min-width: 150px){
+  .preview {
+  margin: 0 auto;
+  padding: 0;
+  width:75%;
+}
+
 @media screen and (min-width: 375px){
   .preview {
   margin: 0 auto;
@@ -35,14 +42,16 @@ body {
 
 @media screen and (min-width: 575px){
   .preview {
+    padding: 0;
     margin: 1%;
-    width: 40%;
+    width: 100%;
   }
 }
 
 /* code added to create four-column design */
-@media screen and (min-width: 1199px){
+@media screen and (min-width: 900px){
   .preview {
+    padding: 0;
      margin: 1%;
      width: 22%;
   }
