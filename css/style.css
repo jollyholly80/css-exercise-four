@@ -9,54 +9,42 @@ body {
 
 .container {
   background-color: #dadada;
+  height: 400px;
   margin: 0 auto;
   width: 100%;
 }
 
+/*mobile*/
 .preview {
   margin: 0% 0;
+  float: left;
   padding: 10px 10px;
   height: 300px;
-  display: inline-block;
+  width: 100%;
   background-color: #dadada;
   background-size: cover;
   background-repeat: no-repeat;
   background-clip: content-box;
-}
-/* code added to create single-column design */
-@media screen and (min-width: 150px){
-  .preview {
-  margin: 0 auto;
-  padding: 0;
-  width:75%;
-}
-
-@media screen and (min-width: 375px){
-  .preview {
-  margin: 0 auto;
-  padding: 0;
-  width:100%;
-}
-
-/* code added to create two-column design */
-
-@media screen and (min-width: 575px){
-  .preview {
-    padding: 0;
-    margin: 1%;
-    width: 100%;
   }
 }
 
-/* code added to create four-column design */
+/*tablet*/
+@media screen and (min-width: 700px){
+  .preview {
+  margin: 0 auto;
+  padding: 10px;
+  width:50%;
+  }
+}
+
+/*desktop*/
 @media screen and (min-width: 900px){
   .preview {
-    padding: 0;
-     margin: 1%;
-     width: 22%;
+  margin: 0 auto;
+  padding: 10px;
+  width:25%;
   }
 }
-
 
 .baku {
   background-image: url("../images/baku.jpg");
